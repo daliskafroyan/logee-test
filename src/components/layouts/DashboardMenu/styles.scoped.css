@@ -1,0 +1,165 @@
+.aside {
+    background-color: #ffffff;
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    width: 14rem;
+}
+.aside.showMenu {
+    display: flex;
+    z-index: 1;
+    padding-left: 12px;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.disable > a {
+    color: var(--grey-color-2);
+}
+
+.aside > aside {
+    display: none;
+}
+
+.aside > aside > a:first-child {
+    width: 2.5rem;
+}
+
+.aside > aside > a:first-child > img {
+    width: 2rem;
+}
+
+.aside > aside > a:not(:first-child) {
+    margin: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 1.5rem;
+}
+
+.aside > aside > a:not(:first-child) > img {
+    width: 100%;
+}
+
+.aside > aside > a:nth-child(2) {
+    bottom: 4rem;
+}
+
+.aside > aside > a:nth-child(3) {
+    bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.aside > section {
+    width: 100%;
+}
+
+.aside > section > figure {
+    display: flex;
+}
+
+.aside > section > figure > img {
+    margin-right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.aside > section > figure > figcaption > small {
+    color: var(--grey-color-2);
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+}
+
+.navSide {
+    background: var(--orange-90);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navSideTop {
+    margin-top: 15px;
+}
+
+.navSideBottom {
+    margin-bottom: 15px;
+}
+
+.navContainer {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.navContainer > figure > figcaption > h5 {
+    font-weight: 800;
+    line-height: 1.375rem;
+    color: var(--text-color);
+}
+
+.belNotif {
+    position: relative;
+    cursor: pointer;
+}
+
+.handleNavSideButton {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.handleLogout > div:nth-child(2) {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #000000;
+}
+
+.boxUnread {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--error-color);
+}
+
+.boxUnread > span {
+    color: var(--background-color-2);
+    font-size: 0.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.boxUnreadHide {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .aside {
+        display: flex;
+    }
+
+    .aside > aside {
+        display: block;
+        background-color: #ffffff;
+        height: 100%;
+        padding: 1.5rem 0;
+        position: relative;
+        text-align: center;
+        width: 4rem;
+    }
+}
