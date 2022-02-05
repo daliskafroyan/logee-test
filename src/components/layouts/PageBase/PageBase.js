@@ -27,9 +27,14 @@ export default function PageBase({ children }) {
         <PageBaseContext.Provider
             value={{ showMenu, setShowMenu, router, setRouter }}
         >
-            <DashboardHeader />
-            <DashboardMenu />
-            <main className={styles.main}>{children}</main>
+            <div className="row">
+                <DashboardMenu />
+
+                <div className="col-sm-12 col-md-9 offset-md-3 offset-lg-2 col-lg-10">
+                    <DashboardHeader />
+                    <main className={styles.main}>{children}</main>
+                </div>
+            </div>
         </PageBaseContext.Provider>
     );
 }

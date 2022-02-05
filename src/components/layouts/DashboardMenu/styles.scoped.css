@@ -3,8 +3,7 @@
     display: none;
     height: 100vh;
     left: 0;
-    position: fixed;
-    width: 14rem;
+    position: fixed !important;
 }
 .aside.showMenu {
     display: flex;
@@ -93,6 +92,7 @@
     overflow: auto;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .navContainer > figure > figcaption > h5 {

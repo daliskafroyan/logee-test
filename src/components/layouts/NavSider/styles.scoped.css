@@ -1,9 +1,7 @@
 .active {
-    background-color: #e6f7ff;
-    border-right: 0.3rem solid #1890ff;
+    background-color: var(--grey-20);
 }
 
-.menuHeader {
-    display: flex;
-    flex-direction: row;
+.menuSection:hover {
+    color: var(--orange-80);
 }

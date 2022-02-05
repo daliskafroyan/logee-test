@@ -9,5 +9,10 @@ export const navsArray = {
             to: routes.DASHBOARD(),
             icon: IconLogo,
         },
+        {
+            name: "Akun PPJK",
+            to: routes.DASHBOARD(),
+            icon: IconLogo,
+        },
     ],
 };

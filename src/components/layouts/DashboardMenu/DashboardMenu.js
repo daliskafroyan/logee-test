@@ -19,7 +19,10 @@ const DashboardMenu = () => {
 
     return (
         <aside
-            className={[styles.aside, showMenu && styles.showMenu].join(" ")}
+            className={
+                [styles.aside, showMenu && styles.showMenu].join(" ") +
+                "col-sm-12 col-md-3 col-lg-2"
+            }
         >
             <div className={styles.navContainer}>
                 <div className={styles.navSide}>
