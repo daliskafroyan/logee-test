@@ -1,13 +1,13 @@
-import { fetchUserList } from "../../services/user";
+import { fetchUserList } from '../../services/user';
 
-import { DATA_FETCHED, LOADING, FAILED } from "./constants";
+import { DATA_FETCHED, LOADING, FAILED } from './constants';
 
 export const API = {
-    fetchUserList,
+  fetchUserList,
 };
 
 export const TYPES = {
-    DATA_FETCHED,
-    LOADING,
-    FAILED,
+  DATA_FETCHED,
+  LOADING,
+  FAILED,
 };

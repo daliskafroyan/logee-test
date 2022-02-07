@@ -1,1 +1,1 @@
-export { default } from "./Ppjk";
+export { default } from './Ppjk';
