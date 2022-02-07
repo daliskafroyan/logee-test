@@ -40,7 +40,7 @@ const App = ({ history, store }) => (
                         path={routes.DASHBOARD()}
                     />
                     <PrivateRoute
-                        component={pages.Main}
+                        component={pages.Ppjk}
                         exact
                         path={routes.PPJK()}
                     />

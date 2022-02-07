@@ -5,15 +5,22 @@ import ExpandSider from "../ExpandSider";
 import styles from "./styles.scoped.css";
 import IconUser from "@components/elements/IconUser";
 import { Typography } from "logeeport-ui";
+import { getUserData } from "@utils/storage";
 
-const SideBar = ({ data }) => {
+const SideBar = (props) => {
+    const data = props.data;
+    const userData = getUserData();
+
     return (
         <div className={styles.sideBarContainer}>
             <div className={styles.menuHeader}>
-                <IconUser width={24} />
+                <div className={styles.iconWrapper}>
+                    <IconUser width={24} />
+                </div>
+
                 <div>
-                    <Typography variant="h5">Port Web Admin</Typography>
-                    <Typography variant="h5">port-admin@mail.com</Typography>
+                    <div className={styles.nameHeader}>{userData.name}</div>
+                    <Typography variant="h5">{userData.email}</Typography>
                 </div>
             </div>
             <nav className={styles.nav}>

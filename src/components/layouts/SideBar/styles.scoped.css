@@ -1,5 +1,6 @@
 .nav {
     margin-top: 1rem;
+    width: 100%;
 }
 
 .nav > a {
@@ -10,6 +11,7 @@
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     transition: background-color 0.25s;
+    margin: auto 0.5rem;
 }
 
 .nav > a > section {
@@ -168,9 +170,24 @@
 .menuHeader {
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
 }
 .sideBarContainer {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 85%;
+    align-items: center;
+}
+
+.nameHeader {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 5px;
 }

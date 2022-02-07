@@ -1,9 +1,9 @@
-import { fetchDashboardGmv } from "../../services/dashboard";
+import { fetchUserList } from "../../services/user";
 
 import { DATA_FETCHED, LOADING, FAILED } from "./constants";
 
 export const API = {
-    fetchDashboardGmv,
+    fetchUserList,
 };
 
 export const TYPES = {

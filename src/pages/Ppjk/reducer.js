@@ -2,20 +2,20 @@ import { DATA_FETCHED, LOADING, FAILED, CLEAR_MESSAGE } from "./constants";
 
 const initialState = {
     isLoading: {
-        fetchDashboardGmv: false,
+        fetchUserList: false,
     },
     data: {
-        fetchDashboardGmv: false,
+        fetchUserList: false,
     },
     message: {
-        fetchDashboardGmv: false,
+        fetchUserList: false,
     },
 };
 
 export default function reducer(state = initialState, action = {}) {
     const { type, data, isLoading, key, message } = action;
 
-    console.log("#debug type reducer main", action);
+    console.log("#debug type reducer ppjk", action);
 
     switch (type) {
         case DATA_FETCHED:

@@ -5,3 +5,7 @@
 .menuSection:hover {
     color: var(--orange-80);
 }
+
+.menuSection {
+    margin-left: 0.5rem;
+}

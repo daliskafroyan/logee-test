@@ -28,7 +28,7 @@ const DashboardMenu = () => {
                 <div className={styles.navSide}>
                     <div className={styles.navSideTop}>
                         <a className={styles.handleNavSideButton}>
-                            <IconLogo />
+                            <IconLogo fill={"#fff"} />
                         </a>
                     </div>
                     <div className={styles.navSideBottom}>

@@ -74,7 +74,7 @@
 
 .navSide {
     background: var(--orange-90);
-    width: 25%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

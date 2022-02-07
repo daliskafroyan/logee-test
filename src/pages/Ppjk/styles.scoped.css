@@ -6,9 +6,19 @@ h5 {
     color: #000;
 }
 
+.greenBadge {
+    color: var(--green-60) !important;
+    background: var(--green-10) !important;
+}
+
+.redBadge {
+    color: var(--red-60) !important;
+    background: var(--red-10) !important;
+}
+
 .dashboardHeader {
     padding: 20px 5px;
-    background: var(--blue-color2);
+    background: var(--blue-color2) !important;
     margin: 1rem auto;
 }
 
@@ -52,5 +62,4 @@ h5 {
 .collapseableContent {
     display: flex;
     justify-content: space-between;
-    padding: 5px 10px;
 }
